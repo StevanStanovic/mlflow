@@ -1,5 +1,0 @@
-name: mlflow-env
-channels:
-  - default
-dependencies:
-  - python=
