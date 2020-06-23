@@ -56,8 +56,8 @@ def mlflow_run(path_experiment=None, run_name=None):
         return(exp_id, run_id)
 
 if __name__=='__main__':
-    #path_experiment = "/Users/stevan.stanovic@cgi.com/Test/LogisticRegressionMLFlow"
-    #run_name = "LogisticReg"
+    path_experiment = "/Users/stevan.stanovic@cgi.com/Test/LogisticRegressionMLFlow"
+    run_name = "LogisticReg"
     (exp_id, run_id) = mlflow_run(path_experiment, run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
 
