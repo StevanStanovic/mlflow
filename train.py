@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import mlflow
+import mlflow.sklearn
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
