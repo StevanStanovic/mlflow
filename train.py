@@ -22,9 +22,7 @@ def import_data(path):
     X = sc.fit_transform(X)
     return (X, y)
 
-def mlflow_run(path_experiment=None, run_name=None):
-    if path_experiment != None:
-        mlflow.set_experiment(path_experiment)
+def mlflow_run(run_name=None):
     with mlflow.start_run(run_name=run_name) as run:
         run_id = run.info.run_uuid
         exp_id = run.info.experiment_id
@@ -57,9 +55,8 @@ def mlflow_run(path_experiment=None, run_name=None):
         return(exp_id, run_id)
 
 if __name__=='__main__':
-    path_experiment = "/Users/stevan.stanovic@cgi.com/Test/LogisticRegressionMLFlow"
     run_name = "LogisticReg"
-    (exp_id, run_id) = mlflow_run(path_experiment, run_name)
+    (exp_id, run_id) = mlflow_run(run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
 
 
