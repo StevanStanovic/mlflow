@@ -3,5 +3,48 @@ name: MLProject
 conda_env: conda.yaml
 
 entry_points:
+  ann:
+    parameters:
+      nb_batch : int
+      nb_epochs : int
+    command:
+      "python ANN.py {nb_batch} {nb_epochs}"
+      
+  decisionTree:
+    parameters:
+      criterion : str
+    command:
+      "python Decision_Tree.py {criterion}"
+      
+  gaussianNaiveBayes:
+    command:
+      "python Gaussian_Naive_Bayes.py"
+      
+  knn:
+    parameters:
+      nb_neighbors : int
+      metric : str
+      p : int
+    command:
+      "python KNN.py {nb_neighbors} {metric} {p}"
+  
+  randomForest:
+    parameters:
+      nb_estim : int
+      criterion : str
+    command:
+      "python Random_Forest.py {nb_estim} {criterion}"
+      
+  regressionLogistique:
+    command:
+      "python Régression_Logistique.py"
+  
+  SVMGauss:
+    parameters:
+      C : float
+      kernel : str
+    command:
+      "python SVM_Gauss.py {C} {kernel}"
+      
   main:
     command: "python test.py"
