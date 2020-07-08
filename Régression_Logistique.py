@@ -57,7 +57,7 @@ def mlflow_run(parameters, run_name=None):
         return (run_id, exp_id)
 
 if __name__=='__main__':
-    run_name = "Régression Logistique"
+    run_name = "Regression Logistique"
     params = []
     (run_id, exp_id) = mlflow_run(params, run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
