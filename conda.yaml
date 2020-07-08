@@ -6,5 +6,6 @@ dependencies:
   - numpy==1.16.5
   - pandas==0.25.1
   - scikit-learn==0.20.3
+  - tensorflow==2.0
   - pip:
     - mlflow
