@@ -56,14 +56,14 @@ def mlflow_run(parameters, run_name=None):
         mlflow.log_metric("FDR", FDR)
         mlflow.log_metric("accuracy", accuracy)
         
-        mlflow.sklearn.log_model(classifier, run_name + " - Modèle")
+        mlflow.sklearn.log_model(classifier, run_name + "_Modele")
 
         return (run_id, exp_id)
 
 if __name__=='__main__':
     run_name = "SVM Gauss"
-    C = float(sys.argv[1] if len(sys.argv) > 1 else 1.0)
-    kernel = str(sys.argv[2] if len(sys.argv) > 2 else 'rbf')
+    C = float(sys.argv[1])
+    kernel = str(sys.argv[2])
     params = [C, kernel]
     (run_id, exp_id) = mlflow_run(params, run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
