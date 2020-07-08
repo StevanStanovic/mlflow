@@ -65,8 +65,8 @@ def mlflow_run(parameters, run_name=None):
 
 if __name__=='__main__':
     run_name = "ANN"
-    nb_batch = int(sys.argv[1] if len(sys.argv) > 1 else 32)
-    nb_epochs = int(sys.argv[2] if len(sys.argv) > 2 else 100)
+    nb_batch = int(sys.argv[1])
+    nb_epochs = int(sys.argv[2])
     params = [nb_batch, nb_epochs]
     (run_id, exp_id) = mlflow_run(params, run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
