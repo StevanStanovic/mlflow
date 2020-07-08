@@ -5,14 +5,14 @@ conda_env: conda.yaml
 entry_points:
   ann:
     parameters:
-      nb_batch : int
-      nb_epochs : int
+      nb_batch : {type: int, default: 32}
+      nb_epochs : {type: int, default: 100}
     command:
       "python ANN.py {nb_batch} {nb_epochs}"
       
   decisionTree:
     parameters:
-      criterion : str
+      criterion : {type: str, default: "entropy"}
     command:
       "python Decision_Tree.py {criterion}"
       
@@ -22,16 +22,16 @@ entry_points:
       
   knn:
     parameters:
-      nb_neighbors : int
-      metric : str
-      p : int
+      nb_neighbors : {type: int, default: 2}
+      metric : {type: str, default: "minkowski"}
+      p : {type: int, default: 2}
     command:
       "python KNN.py {nb_neighbors} {metric} {p}"
   
   randomForest:
     parameters:
-      nb_estim : int
-      criterion : str
+      nb_estim : {type: int, default: 10}
+      criterion : {type: str, default: "entropy"}
     command:
       "python Random_Forest.py {nb_estim} {criterion}"
       
@@ -41,8 +41,8 @@ entry_points:
   
   SVMGauss:
     parameters:
-      C : float
-      kernel : str
+      C : {type: float, default: 1.0}
+      kernel : {type: str, default: "rbf"}
     command:
       "python SVM_Gauss.py {C} {kernel}"
       
