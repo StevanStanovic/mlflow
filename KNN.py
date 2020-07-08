@@ -64,9 +64,9 @@ def mlflow_run(parameters, run_name=None):
 
 if __name__=='__main__':
     run_name = "KNN"
-    nb_neighbors = int(sys.argv[1] if len(sys.argv) > 1 else 2)
-    metric = str(sys.argv[2] if len(sys.argv) > 2 else 'minkowski')
-    p = int(sys.argv[3] if len(sys.argv) > 3 else 2)
+    nb_neighbors = int(sys.argv[1])
+    metric = str(sys.argv[2])
+    p = int(sys.argv[3])
     params = [nb_neighbors, metric, p]
     (run_id, exp_id) = mlflow_run(params, run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
