@@ -62,8 +62,8 @@ def mlflow_run(parameters, run_name=None):
 
 if __name__=='__main__':
     run_name = "Random Forest"
-    nb_estim = int(sys.argv[1] if len(sys.argv) > 1 else 10)
-    criterion = str(sys.argv[2] if len(sys.argv) > 2 else 'entropy')
+    nb_estim = int(sys.argv[1])
+    criterion = str(sys.argv[2])
     params = [nb_estim, criterion]
     (run_id, exp_id) = mlflow_run(params, run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
