@@ -59,7 +59,7 @@ def mlflow_run(parameters, run_name=None):
 
 if __name__=='__main__':
     run_name = "Decision Tree"
-    criterion = str(sys.argv[1] if len(sys.argv) > 1 else 'entropy')
+    criterion = str(sys.argv[1])
     params = [criterion]
     (run_id, exp_id) = mlflow_run(params, run_name)
     print("Experience finie !\n exp_id = {} et run_id = {}".format(exp_id, run_id))
