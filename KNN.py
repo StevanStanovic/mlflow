@@ -58,7 +58,7 @@ def mlflow_run(parameters, run_name=None):
         mlflow.log_metric("FDR", FDR)
         mlflow.log_metric("accuracy", accuracy)
         
-        mlflow.sklearn.log_model(classifier, run_name + " - Modèle")
+        mlflow.sklearn.log_model(classifier, run_name + "_Modele")
 
         return (run_id, exp_id)
 
