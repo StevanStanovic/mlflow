@@ -45,6 +45,3 @@ entry_points:
       kernel : {type: string, default: "rbf"}
     command:
       "python SVM_Gauss.py {C} {kernel}"
-      
-  main:
-    command: "python test.py"
