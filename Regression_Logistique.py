@@ -27,7 +27,7 @@ def mlflow_run(parameters, run_name=None):
         run_id = run.info.run_uuid
         exp_id = run.info.experiment_id
         
-        (X, y) = import_data('/dbfs/FileStore/tables/Churn_Modelling.csv')
+        (X, y) = import_data('Churn_Modelling.csv')
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 0)
         
         classifier = LogisticRegression()
