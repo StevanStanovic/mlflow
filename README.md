@@ -25,5 +25,24 @@ Objectifs de ce dépôt GitHub
  * **Découverte de Tracking UI**
  * **Implémentation et utilisation de MLFlow en Python**
  * **Découverte de MLFlow dans deux environnements de développement :**
-    * **En local**
-    * **En Databricks**
+   * **Développement local**
+   * **Développement sur Databricks**
+
+Composition du dépôt GitHub
+-----------
+
+Le dépôt est constitué de quatre dossiers représentant chacun un exemple de l'utilisation de :
+ * MLFlow Tracking pour un algorithme supervisé
+ * MLFlow Tracking pour un algorithme non-supervisé
+ * MLFlow Project à l'aide d'un référentiel Git
+ * MLFlow Model Registry et déploiement d'un algoru=ithme sur Azure Machine Learning (AML)
+
+Pour chaque dossier, il y a au moins deux dossiers correspondant aux deux manières présentées dans ce dépôt de coder un MLFlow (Local ou Databricks) et un fichier Databricks (.dbc) pour faciliter les personnes possédant un compte Databricks.
+
+Pré-requis pour le développement en local
+-----------
+
+Pré-requis pour le développement sur Databricks
+-----------
+
+ 
