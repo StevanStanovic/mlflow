@@ -53,18 +53,18 @@ Dans tous les cas, afin de suivre les quatre exemples, il vous faudra téléchar
  * **tensorflow**
  * **mlflow**
 
-**Remarque importante :**
-
+**Remarques importantes :** 
+ * Durant l'installation, il est recommandé de créer la variable d'environnement associé au chemin d'accès (**PATH**) du Python installé. De même, lorsque vous installerez des bibliothèques des avertissements (**Warnings**) apparaîtront par rapport à la non-présence d'une variable d'environnement. Si vous devez effectuer cette tâche après installation, le lien [Configurer votre variable d'environnement]() vous permettra de faire cela. Cette tâche est importante pour utiliser MLFlow localement car nous aurons besoin d'un invité de commande/terminal pour les exemples cités ci-dessus
+ * Remarque : si vous effectuez un ajout/modification de variable d'environnement, redémarrer votre invité de commande/terminal afin d'avoir accès à ce changement sur ce dernier.
 
 L'installation des bibliothèques se réalise de la manière suivante :
 1. Ouvrir un invité de commande/terminal
 2. Installer la bibliothèque `nom_bibliothèque` grâce à la commande : 
-  - `pip install --user --upgrade nom_bibliothèque` pour ceux ayant installer Python 
-  - `conda install --user --upgrade nom_bibliothèque` pour ceux ayant installer Anaconda
+  * `pip install --user --upgrade nom_bibliothèque` pour ceux ayant installer Python 
+  * `conda install --user --upgrade nom_bibliothèque` pour ceux ayant installer Anaconda
 
 Pour plus d'informations sur comment installer une bibliothèque, je recommande le lien ci-dessous : 
-- https://docs.python.org/fr/3.6/installing/index.html
-
+* https://docs.python.org/fr/3.6/installing/index.html
 
 Pré-requis pour le développement sur Databricks
 -----------------------------------------------
