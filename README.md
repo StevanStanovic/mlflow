@@ -42,6 +42,21 @@ Pour chaque dossier, il y a au moins deux dossiers correspondant aux deux maniè
 Pré-requis pour le développement en local
 -----------
 
+Tout d'abord, il faut installer Python. Deux choix s'offrent à vous :
+ * télécharger et installer Python depuis le [site officiel](https://www.python.org/downloads/)
+ * télécharger et installer Anaconda depuis ce [site](https://www.anaconda.com/products/individual)
+ 
+Dans tous les cas, afin de suivre les quatre exemples, il vous faudra télécharger les bibliothèques Python suivantes : 
+ * **numpy**
+ * **pandas**
+ * **scikit-learn** (sklearn)
+ * **tensorflow**
+ * **mlflow**
+
+L'installation des bibliothèques se réalise de la manière suivante :
+ 1-
+
+
 Pré-requis pour le développement sur Databricks
 -----------
 
