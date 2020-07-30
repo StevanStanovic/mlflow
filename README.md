@@ -1,4 +1,4 @@
-MLFLOW
+#MLFLOW
 ===========
 
 
@@ -53,8 +53,14 @@ Dans tous les cas, afin de suivre les quatre exemples, il vous faudra téléchar
  * **tensorflow**
  * **mlflow**
 
+
+
 L'installation des bibliothèques se réalise de la manière suivante :
- 1-
+1. Ouvrir un invité de commande/terminal
+2. 
+
+Pour plus d'informations sur comment installer une bibliothèque, je recommande le lien ci-dessous : 
+
 
 
 Pré-requis pour le développement sur Databricks
