@@ -18,5 +18,12 @@ Aujourd'hui, MLFlow est réparti en quatre composants principales :
 
 ![Image des quatre composants principales de MLFlow en format PNG](Images/MLFlow_quatre_composants.PNG)
 
-Présentation de MLFlow
+Objectifs de ce dépôt GitHub
 -----------
+
+ * **Compréhension des quatre composants principales**
+ * **Découverte de Tracking UI**
+ * **Implémentation et utilisation de MLFlow en Python**
+ * **Découverte de MLFlow dans deux environnements de développement :**
+    * **En local**
+    * **En Databricks**
