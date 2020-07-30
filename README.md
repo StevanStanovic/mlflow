@@ -1,11 +1,9 @@
-
 MLFLOW
-
------------
+======
 
 
 Présentation de MLFlow
------------
+----------------------
 
 [MLFlow](https://www.mlflow.org/) est une plateforme open source pour la gestion du cycle de vie du Machine Learning (ML). Cette plateforme est une adaptation d'un concept appelé **MLOps** issu d'une publication scientifique de 2015 intitulée [*Hidden Technical Debt in Machine Learning Systems*](http://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf).
 
@@ -21,7 +19,7 @@ Aujourd'hui, MLFlow est réparti en quatre composants principales :
 ![Image des quatre composants principales de MLFlow en format PNG](Images/MLFlow_quatre_composants.PNG)
 
 Objectifs de ce dépôt GitHub
------------
+----------------------------
 
  * **Compréhension des quatre composants principales**
  * **Découverte de Tracking UI**
@@ -31,7 +29,7 @@ Objectifs de ce dépôt GitHub
    * **Développement sur Databricks**
 
 Composition du dépôt GitHub
------------
+---------------------------
 
 Le dépôt est constitué de quatre dossiers représentant chacun un exemple de l'utilisation de :
  * MLFlow Tracking pour un algorithme supervisé
@@ -42,7 +40,7 @@ Le dépôt est constitué de quatre dossiers représentant chacun un exemple de 
 Pour chaque dossier, il y a au moins deux dossiers correspondant aux deux manières présentées dans ce dépôt de coder un MLFlow (Local ou Databricks) et un fichier Databricks (.dbc) pour faciliter les personnes possédant un compte Databricks.
 
 Pré-requis pour le développement en local
------------
+-----------------------------------------
 
 Tout d'abord, il faut installer Python. Deux choix s'offrent à vous :
  * télécharger et installer Python depuis le [site officiel](https://www.python.org/downloads/)
@@ -66,6 +64,6 @@ Pour plus d'informations sur comment installer une bibliothèque, je recommande 
 
 
 Pré-requis pour le développement sur Databricks
------------
+-----------------------------------------------
 
  
