@@ -1,5 +1,6 @@
 MLFLOW
-===
+===========
+
 
 Présentation de MLFlow
 -----------
@@ -15,5 +16,7 @@ Cet objectif a été atteint depuis et des améliorations ont été développée
 
 Aujourd'hui, MLFlow est réparti en quatre composants principales :
 
-![Image des quatre composants principales de MLFlow en format PNG](Images/MLFlow_quatre_composants.PNG "Les quatre composants principales de MLFlow")
+![Image des quatre composants principales de MLFlow en format PNG](Images/MLFlow_quatre_composants.PNG)
 
+Présentation de MLFlow
+-----------
