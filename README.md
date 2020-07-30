@@ -11,4 +11,5 @@ Créé en Juin 2018, MLFlow est un projet initié par Databricks afin de facilit
 Cet objectif a été atteint depuis et des améliorations ont été développées comme le déploiement d'un modèle sur d'autres plateformes ou encore la facilité de gérer l'état d'avancement d'un modèle en production. MLFlow est donc une bonne solution pour aider les développeurs et les opérationnels d'une entreprise à industrialiser leurs modèles et gérer la vie de leurs algorithmes. 
 
 Aujourd'hui, MLFlow est réparti en quatre composants principales :
+
 ![](Images/MLFlow_quatre_composants.PNG)
