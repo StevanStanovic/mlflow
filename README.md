@@ -58,7 +58,9 @@ Dans tous les cas, afin de suivre les quatre exemples, il vous faudra téléchar
 
 L'installation des bibliothèques se réalise de la manière suivante :
 1. Ouvrir un invité de commande/terminal
-2. Installer la bibliothèque `nom_bibliothèque` grâce à la commande : * `pip install --user --upgrade nom_bibliothèque` pour ceux ayant installer Python * `conda install --user --upgrade nom_bibliothèque` pour ceux ayant installer Anaconda
+2. Installer la bibliothèque `nom_bibliothèque` grâce à la commande : 
+  * `pip install --user --upgrade nom_bibliothèque` pour ceux ayant installer Python 
+  * `conda install --user --upgrade nom_bibliothèque` pour ceux ayant installer Anaconda
 
 Pour plus d'informations sur comment installer une bibliothèque, je recommande le lien ci-dessous : 
 - https://docs.python.org/fr/3.6/installing/index.html
