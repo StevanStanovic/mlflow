@@ -1,9 +1,9 @@
-MLFLOW
-===========
-
-
-###Présentation de MLFlow
 -----------
+MLFLOW
+-----------
+
+
+#Présentation de MLFlow
 
 [MLFlow](https://www.mlflow.org/) est une plateforme open source pour la gestion du cycle de vie du Machine Learning (ML). Cette plateforme est une adaptation d'un concept appelé **MLOps** issu d'une publication scientifique de 2015 intitulée [*Hidden Technical Debt in Machine Learning Systems*](http://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf).
 
@@ -18,8 +18,7 @@ Aujourd'hui, MLFlow est réparti en quatre composants principales :
 
 ![Image des quatre composants principales de MLFlow en format PNG](Images/MLFlow_quatre_composants.PNG)
 
-Objectifs de ce dépôt GitHub
------------
+#Objectifs de ce dépôt GitHub
 
  * **Compréhension des quatre composants principales**
  * **Découverte de Tracking UI**
