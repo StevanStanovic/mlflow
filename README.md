@@ -97,3 +97,15 @@ Dans le but de créer un cluster, vous devez tout d'abord :
 * Si vous désirez en apprendre d'avantage sur la configuration d'un cluster, vous pouvez cliquer sur la documentation Databricks [ici](https://docs.databricks.com/clusters/configure.html).
 
 **Comment importer un fichier csv ou json ?**
+Pour importer un fichier depuis votre ordinateur personnel, il faut :
+1. Cliquer sur `Data` dans la barre de tâches puis sur `Add Data` et `browse` et choisir son fichier
+![Image de importer un fichier en format PNG](Images/importer_un_fichier.png)
+2. Après avoir importer votre fichier, cliquer sur `Create Table with UI`
+![Image de créer une table en format PNG](Images/creer_table.png)
+3. Choisir un cluster, cliquer sur `Preview Table` puis `Create Table`
+![Image de la création finale d'une table en format PNG](Images/creation_table.png)
+4. La table créée est alors stocké dans le Databricks
+
+**Quels types de fichier pouvons-nous créer et quelles utilités ont-ils ?**
+En naviguant dans la barre de tâches de Databricks et en cliquant sur `Workspace`, nous avons la possibilité de créer des fichiers ou dossiers. Pour ce faire, on clique sur la flèche du menu déroulant du dossier et, enfin, on clique sur `Create`.
+![Image de la création d'un fichier en format PNG](Images/creation_fichier.png)
