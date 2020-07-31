@@ -87,7 +87,7 @@ Dans le but de créer un cluster, vous devez tout d'abord :
 1. Vous connecter à votre compte Databricks et ensuite, cliquez sur `Clusters` dans la barre des tâches
 2. Cliquez sur `Create Cluster`
 ![Image de création de cluster en format PNG](Images/creation_de_cluster.png)
-
+   3. 
 
 Pour plus d'informations, vous pouvez consulter la documentation Databricks sur [Créer un cluster](https://docs.databricks.com/getting-started/quick-start.html#step-2-create-a-cluster).
 
