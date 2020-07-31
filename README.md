@@ -2,8 +2,8 @@ MLFLOW
 ======
 
 
-   Présentation de MLFlow
---------------------------
+Présentation de MLFlow
+----------------------
 
 [MLFlow](https://www.mlflow.org/) est une plateforme open source pour la gestion du cycle de vie du Machine Learning (ML). Cette plateforme est une adaptation d'un concept appelé **MLOps** issu d'une publication scientifique de 2015 intitulée [*Hidden Technical Debt in Machine Learning Systems*](http://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf).
 
@@ -72,6 +72,22 @@ Pour plus d'informations sur comment installer une bibliothèque, je recommande 
 
 Pré-requis pour le développement sur Databricks
 -----------------------------------------------
-Comment créer un compte ?
 
- 
+Dans cette partie, les quatre choses à savoir sont :
+* Comment créer un compte ?
+* Comment créer et utiliser un cluster ?
+* Comment importer un fichier csv ou json ?
+* Quels types de fichier pouvons-nous créer et quelles utilités ont-ils ?
+
+**Comment créer un compte ?**
+Afin de créer un compte (sauf si vous en avez un), Databricks proposent un essai de quatorze jours (un compte AWS est cependant nécessaire). Afin d'en bénéficier, cliquez sur ce [lien](https://docs.databricks.com/getting-started/try-databricks.html#). Sinon, vous pouvez toujours vous abonner à la version communautaire.
+
+**Comment créer et utiliser un cluster ?**
+Dans le but de créer un cluster, vous devez tout d'abord :
+1. Vous connecter à votre compte Databricks et ensuite, cliquez sur `Clusters` dans la barre des tâches
+2. Cliquez sur `Create Cluster`
+![Image de création de cluster en format PNG](Images/creation_de_cluster.PNG)
+
+
+Pour plus d'informations, vous pouvez consulter la documentation Databricks sur [Créer un cluster](https://docs.databricks.com/getting-started/quick-start.html#step-2-create-a-cluster).
+
