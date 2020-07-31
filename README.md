@@ -58,7 +58,7 @@ Dans tous les cas, afin de suivre les quatre exemples, il vous faudra téléchar
    * [Configurer votre variable d'environnement avec Windows](https://www.youtube.com/watch?v=M2BWTJXDJXY)
    * [Configurer votre variable d'environnement avec Linux/Mac](https://www.youtube.com/watch?v=NvAYH5Qu_YQ)
  * Configurer/modifier une variable d'environnement est une tâche importante pour utiliser MLFlow localement car nous aurons besoin d'un invite de commande/terminal pour les exemples cités ci-dessus
- * Si vous effectuez un ajout/modification de variable d'environnement, redémarrer votre invite de commande/terminal afin d'avoir accès à ce changement sur ce dernier.
+ * Si vous effectuez un ajout/modification de variable d'environnement, redémarrer votre invite de commande/terminal afin d'avoir accès à ce changement.
 
 L'installation des bibliothèques se réalise de la manière suivante :
   1. Ouvrir un invite de commande/terminal
@@ -81,7 +81,7 @@ Dans cette partie, les quatre choses à savoir sont :
 
 **Comment créer un compte ?**
 
-Afin de créer un compte (sauf si vous en avez un), Databricks proposent un essai de quatorze jours (un compte AWS est cependant nécessaire). Afin d'en bénéficier, cliquez sur ce [lien](https://docs.databricks.com/getting-started/try-databricks.html#). Sinon, vous pouvez toujours vous abonner à la version communautaire.
+Afin de créer un compte (sauf si vous en avez un), Databricks propose un essai de quatorze jours (un compte AWS est cependant nécessaire). Afin d'en bénéficier, cliquez sur ce [lien](https://docs.databricks.com/getting-started/try-databricks.html#). Sinon, vous pouvez toujours vous abonner à la version communautaire.
 
 **Comment créer et utiliser un cluster ?**
 
@@ -91,7 +91,8 @@ Dans le but de créer un cluster, vous devez tout d'abord :
 2. Cliquer sur `Create Cluster`
 ![Image de création de cluster en format PNG](Images/creation_de_cluster.png)
 
-3. Complèter les champs pour configurer votre nouveau cluster : donner lui un nom, préciser la version d'exécution et configurer le type de la puissance de calcul ainsi que le nombre de ces derniers. Cliquer sur `Create Cluster`. Ci-dessous un exemple de configuration
+3. Complèter les champs pour configurer votre nouveau cluster : donner lui un nom, préciser la version d'exécution et configurer le type de la puissance de calcul ainsi que le nombre de ces derniers. Cliquer sur `Create Cluster` pour finir 
+Ci-dessous un exemple de configuration :
 ![Image de configuration du cluster en format PNG](Images/configuration_du_cluster.png)
 
 4. Après la création du cluster, si vous souhaitez allumer ou éteindre celui-ci, retourner dans la brique `Clusters` dans la barre des tâches. Votre cluster se trouve dans la partie `Interactive Clusters`, cliquer dessus et, selon votre souhait d'action, cliquer soit sur `Start` soit sur `Terminate`.
@@ -113,7 +114,9 @@ Pour importer un fichier depuis votre ordinateur personnel, il faut :
 3. Choisir un cluster, cliquer sur `Preview Table` puis `Create Table`
 ![Image de la création finale d'une table en format PNG](Images/creation_table.png)
 
-4. La table créée est alors stocké dans le Databricks.
+4. La table créée est alors stocké sur votre compte Databricks.
+
+*Remarque :* Databricks est sensible à la façon dont est écrit le fichier csv ou json, c'est-à-dire, lors de la création de la table, Databricks attend que la ligne implémentée dans le fichier importé corresponde parfaitement à une ligne de sa table. Par exemple, dans l'exemple de MLFlow Project avec un référentiel Git, le descriptif du cluster devra être exactement sur une seule ligne.
 
 **Quels types de fichier pouvons-nous créer et quelles utilités ont-ils ?**
 
