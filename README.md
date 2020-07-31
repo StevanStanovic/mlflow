@@ -84,10 +84,16 @@ Afin de créer un compte (sauf si vous en avez un), Databricks proposent un essa
 
 **Comment créer et utiliser un cluster ?**
 Dans le but de créer un cluster, vous devez tout d'abord :
-1. Vous connecter à votre compte Databricks et ensuite, cliquez sur `Clusters` dans la barre des tâches
-2. Cliquez sur `Create Cluster`
+1. Vous connecter à votre compte Databricks et ensuite, cliquer sur `Clusters` dans la barre des tâches
+2. Cliquer sur `Create Cluster`
 ![Image de création de cluster en format PNG](Images/creation_de_cluster.png)
-   3. 
+3. Complèter les champs pour configurer votre nouveau cluster : donner lui un nom, préciser la version d'exécution et configurer le type de la puissance de calcul ainsi que le nombre de ces derniers. Cliquer sur `Create Cluster`. Ci-dessous un exemple de configuration
+![Image de configuration du cluster en format PNG](Images/configuration_du_cluster.png)
+4. Après la création du cluster, si vous souhaitez allumer ou éteindre celui-ci, retourner dans la brique `Clusters` dans la barre des tâches. Votre cluster se trouve dans la partie `Interactive Clusters`, cliquer dessus et, selon votre souhait d'action, cliquer soit sur `Start` soit sur `Terminate`.
 
-Pour plus d'informations, vous pouvez consulter la documentation Databricks sur [Créer un cluster](https://docs.databricks.com/getting-started/quick-start.html#step-2-create-a-cluster).
+*Remarques :*
+* Pour la version d'exécution du cluster, une version ML classique (pas de GPU) est suffisante pour les exemples de ce dépôt. Il permet d'avoir toutes les bibliothèques Machine Learning dont nous avons besoin (Pandas, Numpy, Scikit-learn, MLFlow). Pour plus d'informations, ce [lien](https://docs.databricks.com/runtime/index.html) vous permettra de vous renseigner sur les différentes versions
+* Le choix d'un `Standard_DS3_V2` est suffisant pour de la puissance de calcul dans les exemples du dépôt
+* Si vous désirez en apprendre d'avantage sur la configuration d'un cluster, vous pouvez cliquer sur la documentation Databricks [ici](https://docs.databricks.com/clusters/configure.html).
 
+**Comment importer un fichier csv ou json ?**
