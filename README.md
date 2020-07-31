@@ -107,9 +107,15 @@ Pour importer un fichier depuis votre ordinateur personnel, il faut :
 ![Image de créer une table en format PNG](Images/creer_table.png)
 3. Choisir un cluster, cliquer sur `Preview Table` puis `Create Table`
 ![Image de la création finale d'une table en format PNG](Images/creation_table.png)
-4. La table créée est alors stocké dans le Databricks
+4. La table créée est alors stocké dans le Databricks.
 
 **Quels types de fichier pouvons-nous créer et quelles utilités ont-ils ?**
 
 En naviguant dans la barre de tâches de Databricks et en cliquant sur `Workspace`, nous avons la possibilité de créer des fichiers ou dossiers. Pour ce faire, on clique sur la flèche du menu déroulant du dossier et, enfin, on clique sur `Create`.
 ![Image de la création d'un fichier en format PNG](Images/creation_fichier.png)
+On remarque sur l'image ci-dessus que l'on peut soit créer : 
+* un notebook pour écrire nos scripts
+* une bibliothèque (Library) pour importer une bibliothèque dans un dossier (inutile dans ce dépôt)
+* un dossier
+* une expéreince MLFlow pour capter toutes les informations, métriques, paramètres de nos exécutions Python que nous verrons dans les exemples.
+
