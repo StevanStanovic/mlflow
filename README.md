@@ -32,8 +32,8 @@ Composition du dépôt GitHub
 ---------------------------
 
 Le dépôt est constitué de quatre dossiers représentant chacun un exemple de l'utilisation de :
- * MLFlow Tracking pour un algorithme supervisé
- * MLFlow Tracking pour un algorithme non-supervisé
+ * MLFlow Tracking pour un algorithme supervisé (classification)
+ * MLFlow Tracking pour un algorithme non-supervisé (clustering/partitionnement des données)
  * MLFlow Project à l'aide d'un référentiel Git
  * MLFlow Model Registry et déploiement d'un algoru=ithme sur Azure Machine Learning (AML)
 
