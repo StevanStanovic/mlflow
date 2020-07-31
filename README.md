@@ -55,16 +55,16 @@ Dans tous les cas, afin de suivre les quatre exemples, il vous faudra téléchar
 
 **Remarques importantes :** 
  * Durant l'installation, il est recommandé de créer la variable d'environnement associé au chemin d'accès (**PATH**) du Python installé. De même, lorsque vous installerez des bibliothèques des avertissements (**Warnings**) apparaîtront par rapport à la non-présence d'une variable d'environnement. Si vous devez effectuer cette tâche après installation, les liens Youtube suivants vous permettront de faire cela (ou d'adapter à votre cas si besoin)
-  * [Configurer votre variable d'environnement avec Windows](https://www.youtube.com/watch?v=M2BWTJXDJXY)
-  * [Configurer votre variable d'environnement avec Linux/Mac](https://www.youtube.com/watch?v=NvAYH5Qu_YQ)
+   * [Configurer votre variable d'environnement avec Windows](https://www.youtube.com/watch?v=M2BWTJXDJXY)
+   * [Configurer votre variable d'environnement avec Linux/Mac](https://www.youtube.com/watch?v=NvAYH5Qu_YQ)
  * Configurer/modifier une variable d'environnement est une tâche importante pour utiliser MLFlow localement car nous aurons besoin d'un invite de commande/terminal pour les exemples cités ci-dessus
  * Si vous effectuez un ajout/modification de variable d'environnement, redémarrer votre invite de commande/terminal afin d'avoir accès à ce changement sur ce dernier.
 
 L'installation des bibliothèques se réalise de la manière suivante :
   1. Ouvrir un invite de commande/terminal
   2. Installer la bibliothèque `nom_bibliothèque` grâce à la commande : 
-    * `pip install --user --upgrade nom_bibliothèque` pour ceux ayant installer Python 
-    * `conda install --user --upgrade nom_bibliothèque` pour ceux ayant installer Anaconda
+     * `pip install --user --upgrade nom_bibliothèque` pour ceux ayant installer Python 
+     * `conda install --user --upgrade nom_bibliothèque` pour ceux ayant installer Anaconda
 
 Pour plus d'informations sur comment installer une bibliothèque, je recommande les liens ci-dessous : 
 * https://docs.python.org/fr/3.6/installing/index.html pour Python
