@@ -80,9 +80,11 @@ Dans cette partie, les quatre choses à savoir sont :
 * Quels types de fichier pouvons-nous créer et quelles utilités ont-ils ?
 
 **Comment créer un compte ?**
+
 Afin de créer un compte (sauf si vous en avez un), Databricks proposent un essai de quatorze jours (un compte AWS est cependant nécessaire). Afin d'en bénéficier, cliquez sur ce [lien](https://docs.databricks.com/getting-started/try-databricks.html#). Sinon, vous pouvez toujours vous abonner à la version communautaire.
 
 **Comment créer et utiliser un cluster ?**
+
 Dans le but de créer un cluster, vous devez tout d'abord :
 1. Vous connecter à votre compte Databricks et ensuite, cliquer sur `Clusters` dans la barre des tâches
 2. Cliquer sur `Create Cluster`
@@ -97,6 +99,7 @@ Dans le but de créer un cluster, vous devez tout d'abord :
 * Si vous désirez en apprendre d'avantage sur la configuration d'un cluster, vous pouvez cliquer sur la documentation Databricks [ici](https://docs.databricks.com/clusters/configure.html).
 
 **Comment importer un fichier csv ou json ?**
+
 Pour importer un fichier depuis votre ordinateur personnel, il faut :
 1. Cliquer sur `Data` dans la barre de tâches puis sur `Add Data` et `browse` et choisir son fichier
 ![Image de importer un fichier en format PNG](Images/importer_un_fichier.png)
@@ -107,5 +110,6 @@ Pour importer un fichier depuis votre ordinateur personnel, il faut :
 4. La table créée est alors stocké dans le Databricks
 
 **Quels types de fichier pouvons-nous créer et quelles utilités ont-ils ?**
+
 En naviguant dans la barre de tâches de Databricks et en cliquant sur `Workspace`, nous avons la possibilité de créer des fichiers ou dossiers. Pour ce faire, on clique sur la flèche du menu déroulant du dossier et, enfin, on clique sur `Create`.
 ![Image de la création d'un fichier en format PNG](Images/creation_fichier.png)
