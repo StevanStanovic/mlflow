@@ -16,7 +16,7 @@ Cet objectif a été atteint depuis et des améliorations ont été développée
 
 Aujourd'hui, MLFlow est réparti en quatre composants principales :
 
-![Image des quatre composants principales de MLFlow en format PNG](Images/MLFlow_quatre_composants.PNG)
+![Image of the four main components of MLFlow in PNG format](Images/MLFlow_four_components.PNG)
 
 Objectifs de ce dépôt GitHub
 ----------------------------
@@ -89,11 +89,11 @@ Dans le but de créer un cluster, vous devez tout d'abord :
 1. Vous connecter à votre compte Databricks et ensuite, cliquer sur `Clusters` dans la barre des tâches
 
 2. Cliquer sur `Create Cluster`
-![Image de création de cluster en format PNG](Images/creation_de_cluster.png)
+![Image of cluster creation in PNG format](Images/cluster_creation.png)
 
 3. Complèter les champs pour configurer votre nouveau cluster : donner lui un nom, préciser la version d'exécution et configurer le type de la puissance de calcul ainsi que le nombre de ces derniers. Cliquer sur `Create Cluster` pour finir 
 Ci-dessous un exemple de configuration :
-![Image de configuration du cluster en format PNG](Images/configuration_du_cluster.png)
+![Image of cluster configuration in PNG format](Images/cluster_configuration.png)
 
 4. Après la création du cluster, si vous souhaitez allumer ou éteindre celui-ci, retourner dans la brique `Clusters` dans la barre des tâches. Votre cluster se trouve dans la partie `Interactive Clusters`, cliquer dessus et, selon votre souhait d'action, cliquer soit sur `Start` soit sur `Terminate`.
 
@@ -106,13 +106,13 @@ Ci-dessous un exemple de configuration :
 
 Pour importer un fichier depuis votre ordinateur personnel, il faut :
 1. Cliquer sur `Data` dans la barre de tâches puis sur `Add Data` et `browse` et choisir son fichier
-![Image de importer un fichier en format PNG](Images/importer_un_fichier.png)
+![Image of importing file in PNG format](Images/importing_files.png)
 
 2. Après avoir importer votre fichier, cliquer sur `Create Table with UI`
-![Image de créer une table en format PNG](Images/creer_table.png)
+![Image of table creation in PNG format](Images/create_table.png)
 
 3. Choisir un cluster, cliquer sur `Preview Table` puis `Create Table`
-![Image de la création finale d'une table en format PNG](Images/creation_table.png)
+![Image of final table creation in PNG format](Images/table_creation.png)
 
 4. La table créée est alors stocké sur votre compte Databricks.
 
@@ -121,7 +121,7 @@ Pour importer un fichier depuis votre ordinateur personnel, il faut :
 **Quels types de fichier pouvons-nous créer et quelles utilités ont-ils ?**
 
 En naviguant dans la barre de tâches de Databricks et en cliquant sur `Workspace`, nous avons la possibilité de créer des fichiers ou dossiers. Pour ce faire, on clique sur la flèche du menu déroulant du dossier et, enfin, on clique sur `Create`.
-![Image de la création d'un fichier en format PNG](Images/creation_fichier.png)
+![Image of file creation in PNG format](Images/file_creation.png)
 
 On remarque sur l'image ci-dessus que l'on peut soit créer : 
 * un notebook pour écrire nos scripts
