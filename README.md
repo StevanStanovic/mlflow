@@ -127,4 +127,4 @@ On remarque sur l'image ci-dessus que l'on peut soit créer :
 * un notebook pour écrire nos scripts
 * une bibliothèque (Library) pour importer une bibliothèque dans un dossier (inutile dans ce dépôt)
 * un dossier
-* une expéreince MLFlow pour capter toutes les informations, métriques, paramètres de nos exécutions Python que nous verrons dans les exemples.
+* une expérience MLFlow pour capter toutes les informations, métriques, paramètres de nos exécutions Python que nous verrons dans les exemples.
