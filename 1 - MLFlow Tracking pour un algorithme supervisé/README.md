@@ -36,7 +36,7 @@ La visualisation des résultats se réalise sur l'interface utilisateur de MLFlo
 4. Ne pas fermer l'invite de commande/terminal, ouvrir son navigateur web et copier-coller l'adresse web ou alors taper http://localhost:5000/ (cela revient normalement au même)
 5. L'interface Tracking UI apparaît.
 
-![Image of Tracking UI interface](Images/Trackin_UI_interface.png)
+![Image of Tracking UI interface](Images/Tracking_UI_interface.png)
 
 Pour plus d'informations, je vous recommande le tutoriel de la [documentation de MLFlow](https://www.mlflow.org/docs/latest/quickstart.html#quickstart).
 
