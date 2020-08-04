@@ -27,6 +27,7 @@ La visualisation des résultats se réalise sur l'interface utilisateur de MLFlo
 ![Image of the comparison example](Images/Comparing_metric_with_parameter_SVM.PNG)
 
 **Accès au Tracking UI en local**
+
 0. Lancer vos expériences. Un dossier intitulé `mlruns` (ce nouveau dossier contient les répertoires de vos epériences) a été crée dans votre dossier contenant vos scripts Python.
 1. Ouvrir un invite de commande/terminal.
 2. Se déplacer jusqu'au dossier des scripts Python à l'aide de la commande `cd`.
