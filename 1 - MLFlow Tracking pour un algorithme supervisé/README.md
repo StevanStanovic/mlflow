@@ -24,7 +24,16 @@ Visualisation des expériences et accès au Tracking UI
 
 La visualisation des résultats se réalise sur l'interface utilisateur de MLFlow : Tracking UI. On peut visualiser des paramètres, des métriques et des fichiers ou encore comparer ces derniers grâce à celui-ci. Le but principal de cet outil est de nous aider à choisir un modèle performant. Par exemple, si on souhaite que notre modèle soit un classifieur SVM, on peut réaliser plusieurs lancements d'expérience avec différents paramètres afin d'optimiser une métrique (accuracy, sensibilité, spécificité ...) et comparer cette métrique par rapport aux paramètres d'entrée sur l'interface.
 
-![Comparison of a metric wit a parameter for a SVM classifier](Images/Comparing_metric_with_parameter_SVM.PNG)
+![Image of the comparison example](Images/Comparing_metric_with_parameter_SVM.PNG)
+
+**Accès au Tracking UI en local**
+0. Lancer vos expériences. Un dossier intitulé `mlruns` (ce nouveau dossier contient les répertoires de vos epériences) a été crée dans votre dossier contenant vos scripts Python.
+1. Ouvrir un invite de commande.
+2. Se déplacer jusqu'au dossier des scripts Python à l'aide de la commande `cd`.
+3. Taper sur l'invite de commande `mlflow ui`.
+   * Si un message d'erreur apparaît précisant que la commande `mlflow` n'est pas reconnu comme un exécutable, cela signifie que vous n'avez pas configuré une variable d'environnement pour MLFlow. Je vous recommande de (re)lire le fichier [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/README.md) de la racine du dépôt.
+
+Pour plus d'informations, je vous recommande le tutoriel de la [documentation de MLFlow](https://www.mlflow.org/docs/latest/quickstart.html#quickstart).
 
 Présentation du jeu de données
 ------------------------------
