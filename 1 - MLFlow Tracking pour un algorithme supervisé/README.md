@@ -28,10 +28,15 @@ La visualisation des résultats se réalise sur l'interface utilisateur de MLFlo
 
 **Accès au Tracking UI en local**
 0. Lancer vos expériences. Un dossier intitulé `mlruns` (ce nouveau dossier contient les répertoires de vos epériences) a été crée dans votre dossier contenant vos scripts Python.
-1. Ouvrir un invite de commande.
+1. Ouvrir un invite de commande/terminal.
 2. Se déplacer jusqu'au dossier des scripts Python à l'aide de la commande `cd`.
-3. Taper sur l'invite de commande `mlflow ui`.
+3. Taper sur l'invite de commande/terminal `mlflow ui`.
    * Si un message d'erreur apparaît précisant que la commande `mlflow` n'est pas reconnu comme un exécutable, cela signifie que vous n'avez pas configuré une variable d'environnement pour MLFlow. Je vous recommande de (re)lire le fichier [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/README.md) de la racine du dépôt.
+   * Sinon, un message vous informe que Tracking UI a été lancé sur une adresse Internet local.
+4. Ne pas fermer l'invite de commande/terminal, ouvrir son navigateur web et copier-coller l'adresse web ou alors taper http://localhost:5000/ (cela revient normalement au même)
+5. L'interface Tracking UI apparaît.
+
+![Image of Tracking UI interface](Images/)
 
 Pour plus d'informations, je vous recommande le tutoriel de la [documentation de MLFlow](https://www.mlflow.org/docs/latest/quickstart.html#quickstart).
 
