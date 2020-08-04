@@ -32,10 +32,10 @@ Composition du dépôt GitHub
 ---------------------------
 
 Le dépôt est constitué de quatre dossiers représentant chacun un exemple de l'utilisation de :
- * MLFlow Tracking pour un algorithme supervisé (classification)
- * MLFlow Tracking pour un algorithme non-supervisé (clustering/partitionnement des données)
- * MLFlow Project à l'aide d'un référentiel Git
- * MLFlow Model Registry et déploiement d'un algorithme sur Azure Machine Learning (AML)
+ 1. MLFlow Tracking pour un algorithme supervisé (classification)
+ 2. MLFlow Tracking pour un algorithme non-supervisé (clustering/partitionnement des données)
+ 3. MLFlow Project à l'aide d'un référentiel Git
+ 4. MLFlow Model Registry et déploiement d'un algorithme sur Azure Machine Learning (AML)
 
 Pour chaque dossier, il y a au moins deux dossiers correspondant aux deux manières présentées de coder un MLFlow dans ce dépôt (Local ou Databricks) et un fichier Databricks (.dbc) pour faciliter le téléchargement des personnes possédant un compte Databricks.
 
