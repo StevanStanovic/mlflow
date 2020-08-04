@@ -41,11 +41,18 @@ La visualisation des résultats se réalise sur l'interface utilisateur de MLFlo
 
 Pour plus d'informations, je vous recommande le tutoriel de la [documentation de MLFlow](https://www.mlflow.org/docs/latest/quickstart.html#quickstart).
 
+**Accès au Tracking UI sur Databricks**
+
+0. Créer un fichier expérience MLFlow `Mlflow Experiment`, cliquer sur le fichier et récupérer la référence de l'ID expérience (`Experiment ID`).
+1. Lancer vos expériences.
+2. Retourner dans le fichier expérience MLFlow et visualiser votre répertoire d'expérience.
+
+
 Présentation du jeu de données
 ------------------------------
 
-Implémentation en local et Tracking UI
---------------------------------------
+Implémentation en local
+-----------------------
 
-Implémentation sur Databricks et Tracking UI
---------------------------------------------
+Implémentation sur Databricks
+-----------------------------
