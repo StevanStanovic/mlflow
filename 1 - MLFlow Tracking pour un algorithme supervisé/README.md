@@ -89,7 +89,7 @@ Chaque modèle possède la même structure :
 
 *Remarque : pour l'ANN, il existe en plus une autre fonction qui permet de construire le réseau de neurones.*
 
-***Remarque importante :** ne pas oublier de changer le chemin d'accès au jeu de données et fixer l'ID de l'expérience.* 
+***Remarque importante :** ne pas oublier de changer le chemin d'accès au jeu de données et de fixer l'ID de l'expérience.* 
 
 Implémentation en local
 -----------------------
