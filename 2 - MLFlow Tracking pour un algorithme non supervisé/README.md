@@ -55,7 +55,7 @@ Résultats
 
 Le jeu de données est bien connu du grand public. Normalement, on décide de partionner le jeu de données en cinq groupes. Cependant, en comparant les métriques obtenues pour les dix-neuf partitonnements, on trouve que le nombre optimum de clusters est six.
 
-Cette différence provient tout simplement de l'interprétation de la méthode de coude (voir [Elbow method](https://en.wikipedia.org/wiki/Elbow_method_(clustering)) pour plus d'informations). Cependant, les indices [Davies-Bouldin](https://fr.wikipedia.org/wiki/Indice_de_Davies-Bouldin) et [Calinski-Harabasz](https://fr.wikipedia.org/wiki/Indice_de_Calinski-Harabasz) et le [coefficient de silhouette du cluster](https://fr.wikipedia.org/wiki/Silhouette_(clustering)) nous recommandent de choisir une partition de six groupes.
+Cette différence provient tout simplement de l'interprétation de la méthode de coude (voir [Elbow method](https://en.wikipedia.org/wiki/Elbow_method_(clustering)) pour plus d'informations). Cependant, les indices [Davies-Bouldin](https://fr.wikipedia.org/wiki/Indice_de_Davies-Bouldin) et [Calinski-Harabasz](https://fr.wikipedia.org/wiki/Indice_de_Calinski-Harabasz) et le [coefficient de silhouette](https://fr.wikipedia.org/wiki/Silhouette_(clustering)) nous recommandent de choisir une partition de six groupes.
 
 La seule différence réelle entre les deux choix est que, parmi le groupe de clients ayant des revenus et un score élevés, il existe deux sous-groupes :
 * l'un avec des revenus annuels dépassant 100 000$ globalement
