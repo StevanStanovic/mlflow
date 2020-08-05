@@ -10,6 +10,11 @@ Objectifs
 * **Création d'un MLFlow Model (configuration par défaut)**
 * **Utilisation de Tracking UI**
 
+Composition du dossier
+----------------------
+
+Le dossier est composé de trois dossiers comportant les images de cette section et les notebooks des implémentations en local et sur Databricks et d'un fichier CSV comportant le jeu de données de notre exemple. 
+
 Présentation des composants MLFlow Tracking & Model
 ---------------------------------------------------
 
