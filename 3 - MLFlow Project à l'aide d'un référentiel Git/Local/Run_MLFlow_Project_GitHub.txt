@@ -1,13 +1,13 @@
-mlflow run https://github.com/StevanStanovic/mlflow --experiment-name Result -e ann -P nb_batch=64 -P nb_epochs=50
+mlflow run https://github.com/StevanStanovic/mlflow/tree/master/MLProject --experiment-name Result -e ann -P nb_batch=64 -P nb_epochs=50
 
-mlflow run https://github.com/StevanStanovic/mlflow --experiment-name Result -e decisionTree -P criterion=entropy
+mlflow run https://github.com/StevanStanovic/mlflow/tree/master/MLProject --experiment-name Result -e decisionTree -P criterion=entropy
 
-mlflow run https://github.com/StevanStanovic/mlflow --experiment-name Result -e gaussianNaiveBayes
+mlflow run https://github.com/StevanStanovic/mlflow/tree/master/MLProject --experiment-name Result -e gaussianNaiveBayes
 
-mlflow run https://github.com/StevanStanovic/mlflow --experiment-name Result -e knn -P metric=minkowski -P nb_neighbors=2 -P p=2
+mlflow run https://github.com/StevanStanovic/mlflow/tree/master/MLProject --experiment-name Result -e knn -P metric=minkowski -P nb_neighbors=2 -P p=2
 
-mlflow run https://github.com/StevanStanovic/mlflow --experiment-name Result -e randomForest -P criterion=entropy -P nb_estim=20
+mlflow run https://github.com/StevanStanovic/mlflow/tree/master/MLProject --experiment-name Result -e randomForest -P criterion=entropy -P nb_estim=20
 
-mlflow run https://github.com/StevanStanovic/mlflow --experiment-name Result -e logisticRegression
+mlflow run https://github.com/StevanStanovic/mlflow/tree/master/MLProject --experiment-name Result -e logisticRegression
 
-mlflow run https://github.com/StevanStanovic/mlflow --experiment-name Result -e SVMGauss -P C=0.9 -P kernel=rbf
+mlflow run https://github.com/StevanStanovic/mlflow/tree/master/MLProject --experiment-name Result -e SVMGauss -P C=0.9 -P kernel=rbf
