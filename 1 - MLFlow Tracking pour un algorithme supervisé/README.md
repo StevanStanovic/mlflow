@@ -6,21 +6,21 @@ Objectifs
 ---------
 
 * **Compréhension de MLFlow Tracking & Model**
-* **Implémentation en local et sur Datavricks de MLFlow Tracking**
+* **Implémentation en local et sur Databricks de MLFlow Tracking**
 * **Création d'un MLFlow Model (configuration par défaut)**
 * **Utilisation de Tracking UI**
 
 Présentation des composants MLFlow Tracking & Model
 ---------------------------------------------------
 
-Le composant MLFlow Tracking est à la fois une API et une interface utilisateur. Son but est d'enregistrer des paramètres, métriques, fichiers et informations (rajouter des annotations aussi). Cette enregistrement se réalise pendant le lancement d'une expérience de code Machine Learning. Ce lancement est ensuite stocké dans un répertoire dont la référence est précisé. Le répertoire en question stocke tous nos lancements dans des dossiers. Ces dossiers sont composés de toutes les informations de nos lancements (paramètres, métriques, fichiers ...)  mais également d'un MLFlow Model. De plus, grâce à l'interface utilisateur de MLFlow Tracking, nous pouvons visualiser ces informations et comparer leurs résultats entre eux. L'interface utilisateur s'appelle Tracking UI.
+Le composant MLFlow Tracking est à la fois une API et une interface utilisateur. Son but est d'enregistrer des paramètres, métriques, fichiers et informations (rajouter des annotations aussi). Cette enregistrement se réalise pendant le lancement d'une expérience de code Machine Learning. Ce lancement est ensuite stocké dans un répertoire dont la référence est précisée. Le répertoire en question stocke tous nos lancements dans des dossiers. Ces dossiers sont composés de toutes les informations de nos lancements (paramètres, métriques, fichiers ...)  mais également d'un MLFlow Model. De plus, grâce à l'interface utilisateur de MLFlow Tracking, nous pouvons visualiser ces informations et comparer leurs résultats entre eux. L'interface utilisateur s'appelle Tracking UI.
 
 Le composant MLFlow Model est un format standard pour packager des modèles ML. Il permet de déployer un modèle sur diverses plateformes et/ou services numériques. Plus précisément, il définit une convention qui permet de sauvegarder un modèle dans différentes "*flavors*". La génération d'un MlFlow Model est réalisé de deux manières, soit :
 * il est définit par un MLFlow Project : la configuration de l'environnement (versions de Python, des bibliothéques, des installations ...) est décrite dans ce dernier (nous verrons cela dans l'exemple 3)
 * il n'est pas définit par un MLFlow Project : la configuration de l'environnement est la même que l'environnement du lancement de l'expérience
 
 Visualisation des expériences et accès au Tracking UI
-------------------------------
+-----------------------------------------------------
 
 La visualisation des résultats se réalise sur l'interface utilisateur de MLFlow : Tracking UI. On peut visualiser des paramètres, des métriques et des fichiers ou encore comparer ces derniers grâce à celui-ci. Le but principal de cet outil est de nous aider à choisir un modèle performant. Par exemple, si on souhaite que notre modèle soit un classifieur SVM, on peut réaliser plusieurs lancements d'expérience avec différents paramètres afin d'optimiser une métrique (accuracy, sensibilité, spécificité ...) et comparer cette métrique par rapport aux paramètres d'entrée sur l'interface.
 
@@ -28,7 +28,7 @@ La visualisation des résultats se réalise sur l'interface utilisateur de MLFlo
 
 **Accès au Tracking UI en local**
 
-0. Lancer vos expériences. Un dossier intitulé `mlruns` (ce nouveau dossier contient les répertoires de vos epériences) a été crée dans votre dossier contenant vos scripts Python.
+0. Lancer vos expériences. Un dossier intitulé `mlruns` (ce nouveau dossier contient les répertoires de vos expériences) a été créé dans votre dossier, il contient vos scripts Python.
 1. Ouvrir un invite de commande/terminal.
 2. Se déplacer jusqu'au dossier des scripts Python à l'aide de la commande `cd`.
 3. Taper sur l'invite de commande/terminal `mlflow ui`.
@@ -39,7 +39,7 @@ La visualisation des résultats se réalise sur l'interface utilisateur de MLFlo
 
 ![Image of Tracking UI interface](Images/Tracking_UI_interface.png)
 
-Pour plus d'informations, je vous recommande le tutoriel de la [documentation de MLFlow](https://www.mlflow.org/docs/latest/quickstart.html#quickstart).
+Pour plus d'informations, je vous recommande le [tutoriel](https://www.mlflow.org/docs/latest/quickstart.html#quickstart) de la documentation de MLFlow.
 
 **Accès au Tracking UI sur Databricks**
 
@@ -82,19 +82,19 @@ L'implémentation de base de l'exemple présenté dans cette section se compose 
 * Classifieur à vecteurs de support (SVM Gauss)
 
 Chaque modèle possède la même structure :
-1. Fonction pour l'importation des modules Python nécessaire
+1. Fonction pour l'importation des modules Python nécessaires
 2. Fonction pour l'importation des données avec pré-traitement inclus
 3. Fonction pour l'exécution d'une expérience MLFlow
 4. Lancement de l'expérience dans la partie principale du script
 
 *Remarque : pour l'ANN, il existe en plus une autre fonction qui permet de construire le réseau de neurones.*
 
-* **Remarque importante :** ne pas oublier de changer le chemin d'accès au jeu de données et fixer l'ID de l'expérience.* 
+***Remarque importante :** ne pas oublier de changer le chemin d'accès au jeu de données et fixer l'ID de l'expérience.* 
 
 Implémentation en local
 -----------------------
 
-La seule particularité notable est que l'on régle la variable TRACKING URI dans le dossier local et que, si besoin, on doit créer une expérience.
+Les deux particularités notables sont que l'on régle la variable TRACKING URI dans le dossier local et que, si besoin, on doit créer une expérience dans le script.
 
 Comme expliqué plus haut dans ce document, il faut que vos scripts Python se trouve dans le même dossier puis exécutez-les et ouvrez le Tracking UI.
 
