@@ -39,7 +39,7 @@ Le dépôt est constitué de quatre dossiers représentant chacun un exemple de 
 
 Pour chaque dossier, il y a au moins deux dossiers correspondant aux deux manières présentées de coder un MLFlow dans ce dépôt (Local ou Databricks) et un fichier Databricks (.dbc) pour faciliter le téléchargement des personnes possédant un compte Databricks.
 
-*Remarque : le dossier `MLProject` est un dossier lié à l'exemple 3*
+*Remarque : le dossier `MLProject` est un dossier lié à l'exemple 3.*
 
 Pré-requis pour le développement en local
 -----------------------------------------
