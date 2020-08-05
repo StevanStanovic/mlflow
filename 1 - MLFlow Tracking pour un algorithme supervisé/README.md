@@ -51,8 +51,54 @@ Pour plus d'informations, je vous recommande le tutoriel de la [documentation de
 Présentation du jeu de données
 ------------------------------
 
+Le jeu de données se nomme Churn Modelling, ce qui signifie en français Modélisation d'attrition. L'attrition désigne le fait de perdre des clients. Ici, dans notre exemple, le fait de perdre des clients dans une banque se situant dans trois pays : France, Allemagne et Espagne. L'objectif de ce jeu de données est de prédire si le prochain client va partir ou non.
+
+Le jeu de données se compose de 14 variables :
+* **RowNumber** : Numéro de ligne (inutile pour l'implémentation)
+* **CustomerID** : Numéro de client (inutile pour l'implémentation)
+* **Surname** :  Nom de famille (inutile pour l'implémentation)
+* **CreditScore** : Score bancaire (entier)
+* **Geography** : Pays du client (variable catégorielle non ordinale)
+* **Gender** : Sexe du client (variable binaire)
+* **Age** : Age du client (entier)
+* **Tenure** : Nombre d'années dans la banque (entier)
+* **Balance** : Disponibilité de fonds (réel)
+* **NumOfProducts** : Nombre de produits (entier)
+* **HasCrCard** : Possession d'une carte bancaire (variable binaire)
+* **IsActiveMember** : Membre actif (variable binaire)
+* **EstimatedSalary** : Estimation du salaire (réel)
+* **Exited** : Attrition du client (variable binaire, *cible de la prédiction*)
+
+Implémentation
+--------------
+
+L'implémentation de base de l'exemple présenté dans cette section se compose de sept modèles :
+* Réseau de neurones artificiels (ANN)
+* Arbre de décision (Decision Tree)
+* Classifieur naîf bayésien (Gaussian Naive Bayes)
+* K-plus proches voisins (KNN)
+* Régression logistique (Logistic Regression)
+* Forêt d'arbres décisionnels (Random Forest)
+* Classifieur à vecteurs de support (SVM Gauss)
+
+Chaque modèle possède la même structure :
+1. Fonction pour l'importation des modules Python nécessaire
+2. Fonction pour l'importation des données avec pré-traitement inclus
+3. Fonction pour l'exécution d'une expérience MLFlow
+4. Lancement de l'expérience dans la partie principale du script
+
+*Remarque : pour l'ANN, il existe en plus une autre fonction qui permet de construire le réseau de neurones.*
+
+* **Remarque importante :** ne pas oublier de changer le chemin d'accès au jeu de données et fixer l'ID de l'expérience.* 
+
 Implémentation en local
 -----------------------
 
+La seule particularité notable est que l'on régle la variable TRACKING URI dans le dossier local et que, si besoin, on doit créer une expérience.
+
+Comme expliqué plus haut dans ce document, il faut que vos scripts Python se trouve dans le même dossier puis exécutez-les et ouvrez le Tracking UI.
+
 Implémentation sur Databricks
 -----------------------------
+
+Pas de particularité au niveau des scripts. Ces derniers ne sont pas obligatoirement dans le même dossier car la référence de l'ID de l'expérience est suffissante. Ne pas oublier de le créer cependant.
