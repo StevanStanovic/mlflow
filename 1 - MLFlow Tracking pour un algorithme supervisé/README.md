@@ -87,7 +87,7 @@ L'implémentation de base de l'exemple présenté dans cette section se compose 
 * Classifieur à vecteurs de support (SVM Gauss)
 
 Chaque modèle possède la même structure :
-1. Fonction pour l'importation des modules Python nécessaires
+1. Importation des modules Python nécessaires
 2. Fonction pour l'importation des données avec pré-traitement inclus
 3. Fonction pour l'exécution d'une expérience MLFlow
 4. Lancement de l'expérience dans la partie principale du script
