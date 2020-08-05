@@ -1,0 +1,47 @@
+name: MLProject
+
+conda_env: conda.yaml
+
+entry_points:
+  ann:
+    parameters:
+      nb_batch : {type: float, default: 32}
+      nb_epochs : {type: float, default: 100}
+    command:
+      "python ANN.py {nb_batch} {nb_epochs}"
+      
+  decisionTree:
+    parameters:
+      criterion : {type: string, default: "entropy"}
+    command:
+      "python Decision_Tree.py {criterion}"
+      
+  gaussianNaiveBayes:
+    command:
+      "python Gaussian_Naive_Bayes.py"
+      
+  knn:
+    parameters:
+      nb_neighbors : {type: float, default: 2}
+      metric : {type: string, default: "minkowski"}
+      p : {type: float, default: 2}
+    command:
+      "python KNN.py {nb_neighbors} {metric} {p}"
+  
+  randomForest:
+    parameters:
+      nb_estim : {type: float, default: 10}
+      criterion : {type: string, default: "entropy"}
+    command:
+      "python Random_Forest.py {nb_estim} {criterion}"
+      
+  logisticRegression:
+    command:
+      "python Logistic_Regression.py"
+  
+  SVMGauss:
+    parameters:
+      C : {type: float, default: 1.0}
+      kernel : {type: string, default: "rbf"}
+    command:
+      "python SVM_Gauss.py {C} {kernel}"
