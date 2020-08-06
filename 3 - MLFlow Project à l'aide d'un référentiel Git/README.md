@@ -66,11 +66,17 @@ L'exécution en local d'un point d'entrée se fait de la manière suivante :
 2. Se déplacer dans le répertoire où l'on souhaite créer le `mlruns`.
 3. Dans l'invite de commande/terminal, utiliser les lignes de commande dans les fichiers textes présent dans le dossier [Local](https://github.com/StevanStanovic/mlflow/tree/master/3%20-%20MLFlow%20Project%20%C3%A0%20l'aide%20d'un%20r%C3%A9f%C3%A9rentiel%20Git/Local).
 
-*Remarque :* l'installation d'un Anaconda ou Miniconda est nécessaire ainsi que le paramètrage de la variable d'environnement associée (voir le [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/README.md) du dépôt).
+*Remarque* : l'installation d'un Anaconda ou Miniconda est nécessaire ainsi que le paramètrage de la variable d'environnement associée (voir le [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/README.md) du dépôt).
 
 En cas de besoin, la documention MLFlow peut vous aider ([lien documentation MLFlow](https://www.mlflow.org/docs/latest/projects.html#running-projects)).
 
 Exécution sur Databricks
 -----------------------------
 
+L'exécution sur Databricks est présentée dans les notebooks. Il y a cependant quatre choses notables :
+* il faut paramètrer la variable Tracking URI sur Databricks à l'aide de la fonction `mlflow.set_tracking_uri()`
+* une configuration d'un cluster automatique est obligatoire (le fichier JSON présent dans le dossier des notebooks Databricks est présent pour cela)
+* ne pas oublier de préciser votre ID d'expérience
+* l'exécution du MLFlow Project de notre exemple est effectué à l'aide d'une fonction qui se nomme `run()` (cette fonction est présente a deux endroits : dans le module `mlflow` et dans le module `mlflow.projects`).
 
+**Note importante** : en réalité, cette fonction va créer une exécution de la même manière que l'on effectue en local.
