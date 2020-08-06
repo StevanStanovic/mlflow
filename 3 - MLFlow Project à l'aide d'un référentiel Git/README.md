@@ -14,8 +14,8 @@ Composition du dossier
 
 
 
-Présentation des composants MLFlow Project
-------------------------------------------
+Présentation du composant MLFlow Project
+----------------------------------------
 
 
 Présentation du jeu de données
