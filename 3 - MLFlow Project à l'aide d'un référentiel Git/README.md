@@ -30,7 +30,7 @@ Chaque MLFlow Project est simplement un répertoire de fichiers ou un référent
 En outre, le fichier MLproject possède trois sections :
 * **Name** : le nom du projet
 * **Entry Points** : les points d'entrées, ce sont des commandes permettant de lancer des exécutables Python ou Shell, on peut préciser si besoin des paramètres (paramètrages par défauts possible)
-* **Environnement** : environnement du projet, comme expliqué plus haut, il est décrit soit dans un fichier YAML (environnement Conda unquement) ou soit dans une image Docker
+* **Environnement** : environnement du projet, comme expliqué plus haut, il est décrit soit dans un fichier YAML (environnement Conda uniquement) ou soit dans une image Docker
 
 **Description d'un environnement Conda dans un fichier YAML**
 
@@ -40,7 +40,7 @@ En outre, le fichier MLproject possède trois sections :
 
 ![Image of example of MLproject](Images/Example_of_MLproject.PNG)
 
-Pour plus d'informations sur les MLFlow Project, vous pouvez vous référer à la documentation de MLFlow ou de Databricks :
+Pour plus d'informations sur les MLFlow Projects, vous pouvez vous référer à la documentation de MLFlow ou de Databricks :
    * [Documentation MLFlow](https://www.mlflow.org/docs/latest/projects.html)
    * [Documentation Databricks](https://docs.databricks.com/applications/mlflow/projects.html)
 
@@ -52,12 +52,25 @@ Le jeu de données est le même que pour celui de l'exmeple 1. Je vous invite à
 Implémentation
 --------------
 
+Le jeu de données ainsi que les codes de l'exemple 1 ont été repris dans cet exemple. Ils ont été adaptés. Si vous voulez voir les modifications, cliquez [ici](https://github.com/StevanStanovic/mlflow/tree/master/MLFlowProject). A ces fichiers, il a été rajouté un fichier décrivant un environnement Conda [`conda.yaml`](https://github.com/StevanStanovic/mlflow/blob/master/MLFlowProject/conda.yaml) et un fichier [`MLproject`](https://github.com/StevanStanovic/mlflow/blob/master/MLFlowProject/MLproject).
 
+Dans le ficher YAML, on donne un nom à l'environnement Conda puis on décrit les dépendances et les installations à effectuer dans le Conda.
 
-Implémentation en local
+Dans le ficher MLproject, on donne également un nom et on précise le fichier YAML associé, et enfin, pour chaque modèle (ou fichier Python), on crée un point d'entrée afin de lancer une exécution du code et crée une nouvelle expérience.
+
+Exécution en local
 -----------------------
 
+L'exécution en local d'un point d'entrée se fait de la manière suivante :
+1. Ouvrir un invite de commande/terminal.
+2. Se déplacer dans le répertoire où l'on souhaite créer le `mlruns`.
+3. Dans l'invite de commande/terminal, utiliser les lignes de commande dans les fichiers textes présent dans le dossier [Local](https://github.com/StevanStanovic/mlflow/tree/master/3%20-%20MLFlow%20Project%20%C3%A0%20l'aide%20d'un%20r%C3%A9f%C3%A9rentiel%20Git/Local).
 
+*Remarque :* l'installation d'un Anaconda ou Miniconda est nécessaire ainsi que le paramètrage de la variable d'environnement associée (voir le [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/README.md) du dépôt).
 
-Implémentation sur Databricks
+En cas de besoin, la documention MLFlow peut vous aider ([lien documentation MLFlow](https://www.mlflow.org/docs/latest/projects.html#running-projects)).
+
+Exécution sur Databricks
 -----------------------------
+
+
