@@ -20,9 +20,27 @@ Les référentiels GitHub et GitLab de cet exemple se trouve respectivement aux 
 Pour la partie prédiction de nouvelles instances, la seconde partie des notebooks Databricks peuvent être réutilisés pour une implémentation locale.
 
 
-Présentation du composant MLFlow Project
-----------------------------------------
+Présentation du composant MLFlow Projects
+-----------------------------------------
 
+Le composant MLFlow Projects est un format pour packager du code ML afin de pouvoir le réutiliser et reproduire les mêmes résultats à tout moment. Cela est rendu possible à l'aide de certaines conventions, elles permettent d'organiser et de décrire son code afin de permettre à d'autres utilisateurs de l'exécuter.
+
+Chaque MLFlow Project est simplement un répertoire de fichiers ou un référentiel Git contenant le code. En plus de ce code, un fichier nommé MLproject est présent, c'est la description de notre MLFlow Project. Celui-ci est souvent relié à un autre fichier décrivant l'environnement dans lequel les codes ML vont être exécutés. Ce fichier peut être une description d'un environnement Conda en format YAML ou une image Docker.
+
+En outre, le fichier MLproject possède trois sections :
+* **Name** : le nom du projet
+* **Entry Points** : les points d'entrées, ce sont des commandes permettant de lancer des exécutables Python ou Shell, on peut préciser si besoin des paramètres (paramètrages par défauts possible)
+* **Environnement** : environnement du projet, comme expliqué plus haut, il est décrit soit dans un fichier YAML (environnement Conda unquement) ou soit dans une image Docker
+
+**Description d'un environnement Conda dans un fichier YAML**
+
+![Image of example of Conda environnement in YAML format](Images/Example_of_conda_environement_YAML.PNG)
+
+**Exemple d'un fichier MLproject**
+
+![Image of example of MLproject](Images/Example_of_MLproject.PNG)
+
+Parler du nom, environnement, points d'entrées
 
 Présentation du jeu de données
 ------------------------------
