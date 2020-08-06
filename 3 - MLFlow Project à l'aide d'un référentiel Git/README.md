@@ -40,7 +40,9 @@ En outre, le fichier MLproject possède trois sections :
 
 ![Image of example of MLproject](Images/Example_of_MLproject.PNG)
 
-Parler du nom, environnement, points d'entrées
+Pour plus d'informations sur les MLFlow Project, vous pouvez vous référer à la documentation de MLFlow ou de Databricks :
+   * [Documentation MLFlow](https://www.mlflow.org/docs/latest/projects.html)
+   * [Documentation Databricks](https://docs.databricks.com/applications/mlflow/projects.html)
 
 Présentation du jeu de données
 ------------------------------
