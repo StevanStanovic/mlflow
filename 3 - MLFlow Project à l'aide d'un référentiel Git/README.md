@@ -7,13 +7,13 @@ Objectifs
 
 * **Compréhension de MLFlow Project**
 * **Configuration de l'environnement du MLFlow Model**
-* **Execution en local et sur Databricks d'un MLProject à l'aide d'un référentiel GitHub ou GitLab**
+* **Exécution en local et sur Databricks d'un MLProject à l'aide d'un référentiel GitHub ou GitLab**
 * **Prédiction de nouvelles instances**
 
 Composition du dossier
 ----------------------
 
-Le dossier est composé de deux dossiers comportant d'une part les notebooks Databricks et d'une autre les commandes MLFlow a éxecuté sur l'invite de commande/terminal (fichiers texte). 
+Le dossier est composé de deux dossiers comportant d'une part les notebooks Databricks et d'une autre les commandes MLFlow a exécuté sur l'invite de commande/terminal (fichiers texte). 
 
 Les référentiels GitHub et GitLab de cet exemple se trouve respectivement aux adresses suivantes : [GitHub](https://github.com/StevanStanovic/mlflow/tree/master/MLFlowProject) et [GitLab](https://gitlab.com/stevan.stanovic/mlflow).
 
@@ -25,7 +25,7 @@ Présentation du composant MLFlow Projects
 
 Le composant MLFlow Projects est un format pour packager du code ML afin de pouvoir le réutiliser et reproduire les mêmes résultats à tout moment. Cela est rendu possible à l'aide de certaines conventions, elles permettent d'organiser et de décrire son code afin de permettre à d'autres utilisateurs de l'exécuter.
 
-Chaque MLFlow Project est simplement un répertoire de fichiers ou un référentiel Git contenant le code. En plus de ce code, un fichier nommé MLproject est présent, c'est la description de notre MLFlow Project. Celui-ci est souvent relié à un autre fichier décrivant l'environnement dans lequel les codes ML vont être exécutés. Ce fichier peut être une description d'un environnement Conda en format YAML ou une image Docker.
+Chaque MLFlow Project est un répertoire de fichiers ou un référentiel Git contenant le code. En plus de ce code, un fichier nommé MLproject est présent, c'est la description de notre MLFlow Project. Celui-ci est souvent relié à un autre fichier décrivant l'environnement dans lequel les codes ML vont être exécutés. Ce fichier peut être une description d'un environnement Conda en format YAML ou une image Docker.
 
 En outre, le fichier MLproject possède trois sections :
 * **Name** : le nom du projet
@@ -47,7 +47,7 @@ Pour plus d'informations sur les MLFlow Projects, vous pouvez vous référer à 
 Présentation du jeu de données
 ------------------------------
 
-Le jeu de données est le même que pour celui de l'exmeple 1. Je vous invite à vous référer au [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/1%20-%20MLFlow%20Tracking%20pour%20un%20algorithme%20supervis%C3%A9/README.md) de ce dernier.
+Le jeu de données est le même que pour celui de l'exemple 1. Je vous invite à vous référer au [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/1%20-%20MLFlow%20Tracking%20pour%20un%20algorithme%20supervis%C3%A9/README.md) de ce dernier.
 
 Implémentation
 --------------
@@ -64,9 +64,9 @@ Exécution en local
 L'exécution en local d'un point d'entrée se fait de la manière suivante :
 1. Ouvrir un invite de commande/terminal.
 2. Se déplacer dans le répertoire où l'on souhaite créer le `mlruns`.
-3. Dans l'invite de commande/terminal, utiliser les lignes de commande dans les fichiers textes présent dans le dossier [Local](https://github.com/StevanStanovic/mlflow/tree/master/3%20-%20MLFlow%20Project%20%C3%A0%20l'aide%20d'un%20r%C3%A9f%C3%A9rentiel%20Git/Local).
+3. Dans l'invite de commande/terminal, utiliser les lignes de commande dans les fichiers textes présents dans le dossier [Local](https://github.com/StevanStanovic/mlflow/tree/master/3%20-%20MLFlow%20Project%20%C3%A0%20l'aide%20d'un%20r%C3%A9f%C3%A9rentiel%20Git/Local).
 
-*Remarque* : l'installation d'un Anaconda ou Miniconda est nécessaire ainsi que le paramètrage de la variable d'environnement associée (voir le [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/README.md) du dépôt).
+*Remarque* : l'installation d'un Anaconda ou Miniconda est nécessaire ainsi que le paramètrage de la variable d'environnement associée (voir le [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/README.md) du dépôt pour l'installation).
 
 En cas de besoin, la documention MLFlow peut vous aider ([lien documentation MLFlow](https://www.mlflow.org/docs/latest/projects.html#running-projects)).
 
@@ -75,8 +75,8 @@ Exécution sur Databricks
 
 L'exécution sur Databricks est présentée dans les notebooks. Il y a cependant quatre choses notables :
 * il faut paramètrer la variable Tracking URI sur Databricks à l'aide de la fonction `mlflow.set_tracking_uri()`
-* une configuration d'un cluster automatique est obligatoire (le fichier JSON présent dans le dossier des notebooks Databricks est présent pour cela)
-* ne pas oublier de préciser votre ID d'expérience
+* une configuration d'un cluster automatique est obligatoire (le fichier JSON dans le dossier des notebooks Databricks est présent pour cela)
+* ne pas oublier de préciser votre ID d'expérience et vos ID d'éxecution pour la partie *Prédiction de nouvelles instances*
 * l'exécution du MLFlow Project de notre exemple est effectué à l'aide d'une fonction qui se nomme `run()` (cette fonction est présente a deux endroits : dans le module `mlflow` et dans le module `mlflow.projects`).
 
 **Note importante** : en réalité, cette fonction va créer une exécution de la même manière que l'on effectue en local.
