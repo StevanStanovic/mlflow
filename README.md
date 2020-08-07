@@ -37,7 +37,7 @@ Le dépôt est constitué de quatre dossiers représentant chacun un exemple de 
  3. MLFlow Project à l'aide d'un référentiel Git et prédiction de nouvelles instances
  4. MLFlow Model Registry et déploiement d'un algorithme sur Azure Machine Learning (AML)
 
-Pour chaque dossier, il y a au moins deux dossiers correspondant aux deux manières présentées de coder un MLFlow dans ce dépôt (Local ou Databricks) et un fichier Databricks (.dbc) pour faciliter le téléchargement des personnes possédant un compte Databricks.
+Pour chaque dossier, il y a au moins deux dossiers correspondant aux deux manières présentées de coder un MLFlow dans ce dépôt (Local ou Databricks). De plus, l'archive Databricks (.dbc) `MLFlow` contient toute l'implémentation. Il est présent pour faciliter les personnes possédant un compte Databricks.
 
 *Remarque : le dossier `MLProject` est un dossier lié à l'exemple 3.*
 
