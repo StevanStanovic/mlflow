@@ -25,6 +25,11 @@ Le composant MLFlow Model Registry est à la fois un registre de modèles centra
 * Manager les transitions d'un modèle dans plusieurs états
 * Archiver et supprimer un modèle
 
+Présentation du jeu de données
+------------------------------
+
+Le jeu de données est le même que pour celui de l'exemple 1. Je vous invite à vous référer au [`README.md`](https://github.com/StevanStanovic/mlflow/blob/master/1%20-%20MLFlow%20Tracking%20pour%20un%20algorithme%20supervis%C3%A9/README.md) de ce dernier.
+
 Implémentation
 --------------
 
