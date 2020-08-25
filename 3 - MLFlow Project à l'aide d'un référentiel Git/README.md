@@ -1,4 +1,4 @@
-MLFlow Project à l'aide d'un référentiel Git et prédiction de nouvelles instances
+MLFlow Projects à l'aide d'un référentiel Git et prédiction de nouvelles instances
 =================================================================================
 
 
